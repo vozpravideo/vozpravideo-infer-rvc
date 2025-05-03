@@ -1,5 +1,12 @@
 # RVC-Python-FastInference
 
+# Fork of infer_rvc_python
+
+This repository is a fork of the original [infer_rvc_python](https://github.com/R3gm/infer_rvc_python) by R3gm, with specific modifications for the VozPraVideo project.
+
+For more information about the original implementation, visit [R3gm/infer_rvc_python](https://github.com/R3gm/infer_rvc_python).
+
+
 A streamlined Python wrapper for fast inference with RVC.
 Specifically designed for inference tasks.
 
