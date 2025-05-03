@@ -897,6 +897,18 @@ class BaseLoader:
                 self.model_vc["pipe"].model_rmvpe = self.model_pitch_estimator
 
             self.cache_model = copy.deepcopy(now_data)
+            
+        if not hasattr(self, 'model_vc'):
+            self.model_vc = {}
+            
+        if 'index_rate' not in self.model_vc and tag in self.model_config:
+            self.model_vc['index_rate'] = self.model_config[tag]['index_influence']
+            
+        if 'index' not in self.model_vc:
+            self.model_vc['index'] = None
+            
+        if 'big_npy' not in self.model_vc:
+            self.model_vc['big_npy'] = None
 
         return self.infer(
             tag,
