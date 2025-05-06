@@ -906,6 +906,15 @@ class BaseLoader:
             
         if 'index' not in self.model_vc:
             self.model_vc['index'] = None
+        
+        if 'inp_f0' not in self.model_vc:
+            self.model_vc['inp_f0'] = None
+        
+        if 'n_spk' not in self.model_vc:
+            self.model_vc['n_spk'] = None
+            
+        if 'tgt_sr' not in self.model_vc:
+            self.model_vc['tgt_sr'] = None
             
         if 'big_npy' not in self.model_vc:
             self.model_vc['big_npy'] = None
